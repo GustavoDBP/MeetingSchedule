@@ -1,0 +1,39 @@
+.MuiModal-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MuiModal-root * {
+    outline: none;
+}
+
+.modal-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.modal-card .content {
+    max-width: 750px;
+    min-width: 450px;
+    width: 75vw;
+    padding: 10px 10px 25px 10px;
+}
+
+.modal-card .content>div {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.modal-card .footer {
+    display: flex;
+}
+
+.modal-card .footer>div:nth-child(1) {
+    flex-grow: 1;
+}
+
+h3 {
+    text-align: center;
+}

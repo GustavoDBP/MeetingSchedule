@@ -1,0 +1,230 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+html {
+    font-size: 16px;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+header.page-header {
+    display: flex;
+    background-color: #434343;
+    height: 50px;
+    padding: 0 15px;
+    color: white;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, .15);
+    overflow: hidden;
+}
+
+header.page-header>nav>div>div {
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, .15);
+}
+
+header.page-header> :nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+header.page-header> :nth-child(1)>img {
+    height: 40%;
+}
+
+header.page-header> :nth-child(2) {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header.page-header>nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header.page-header>nav>a,
+header.page-header>nav>div,
+header.page-header>nav>div>div>a {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+header.page-header>nav>a:hover,
+header.page-header>nav>div:hover,
+header.page-header>nav>div>div>a:hover {
+    cursor: pointer;
+    background-color: rgba(1, 1, 1, .15);
+}
+
+header.page-header>nav>div>div>a {
+    height: 40px;
+    width: 100%;
+}
+
+header.page-header>nav>a>span,
+header.page-header>nav>div>span,
+header.page-header>nav>div>div>a>span {
+    padding: 0 15px;
+}
+
+header.page-header>nav>a.active,
+header.page-header>nav>div.active {
+    border-bottom: 4px solid white;
+}
+
+header.page-header>nav>a>span,
+header.page-header>nav>div>span {
+    font-weight: 100;
+    height: fit-content;
+}
+
+header.page-header>nav>div> {
+    position: relative;
+}
+
+header.page-header>nav>div>div {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background-color: #434343;
+}
+
+header.page-header>nav>div:hover>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header.page-header>div:last-child {
+    display: flex;
+    align-items: center;
+}
+
+header.page-header .balance {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+header.page-header .balance > :first-child {
+    margin-right: 5px;
+}
+
+header.page-header .profile {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+header.page-header .profile .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 130px;
+}
+
+header.page-header .profile .details > span:nth-child(1){
+    font-size: 16px;
+}
+header.page-header .profile .details > span:nth-child(2){
+    font-size: 12px;
+    opacity: 50%;
+}
+
+header.page-header .profile img {
+    width: 40px;
+}
+
+.brand {
+    cursor: pointer;
+}
+
+.container.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 95%;
+    padding-top: 25px;
+}
+
+.container.main-container>h2.page-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.main-form {
+    max-width: 750px;
+    width: 80%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main * {
+    color: #535353;
+
+}
+
+.form-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.tag {
+    height: 25px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px;
+    border-radius: 20px;
+    background-color: #E1E1E1;
+    font-size: 12px;
+}
+
+a,
+a:hover {
+    color: #535353;
+    text-decoration: none;
+}
+
+button.icon-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: none;
+}
+
+button.icon-btn:hover {
+    background-color: rgba(83, 83, 83, .15);
+    transition: background-color 150ms;
+}
+
+button.icon-btn:active {
+    background-color: rgba(83, 83, 83, .25);
+    transition: background-color 150ms;
+}
